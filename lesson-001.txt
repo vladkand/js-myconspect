@@ -1,0 +1,9 @@
+Типы переменных
+  - Number
+  - Stringe - let username = 'Mango';
+  - Bulean 
+  Они задают вопрос, и ответ на его - да или нет:
+      - true -истина, 1;
+      - false -ложь, нет, 0;
+  - undefined (неопределенная)
+    
