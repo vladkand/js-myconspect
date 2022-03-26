@@ -37,9 +37,11 @@ foo: {id: 1, verified: true, color: 'green'}
 
 /* prompt() - выводит модальное окно с полем ввода и кнопками Ok и Cancel. При нажатии Ok, резул5+2ьтатом будет то, что ввел пользователь, при Cancel - возвращается null. */
 
-const hotelName = prompt("Please enter desired hotel name(название)");
-// console.log(typeof hotelName);// ->string
-console.log(hotelName);// -> "5"
+// const hotelName = prompt("Please enter desired hotel name(название)");
+// console.log(hotelName);// -> "5"
+// console.log(`typeof всегда строка`,typeof hotelName);// ->string2
+
+
 /* Важная особенность prompt в том, что не зависимо что ввел пользователь, всегда вернется строка. То есть, если пользователь ввел 5, то вернется не число 5, а строка "5". */
 
 // let myProfile = {name: 'Vlad', age: 22, sex: 'male'};
