@@ -1,0 +1,7 @@
+let quantity = prompt('Введите количество товаров'); // string(Two)
+quantity = Number(quantity);
+console.log(quantity); //--> NaN
+console.log(typeof quantity); //-->number
+
+*** ВОПРОС
+          при вводе в модалку 'string', --> typeof пишет 'number' !!!
