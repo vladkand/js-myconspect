@@ -56,7 +56,7 @@ foo: {id: 1, verified: true, color: 'green'}
 */
 
 // let quantity = prompt('Введите количество товаров'); // 15
-// // console.log(quantity); //--> 15
+// console.log(quantity); //--> 15
 // console.log(typeof quantity); //--> stringwert
 // quantity = Number.parseInt(quantity);
 // console.log(quantity); //--> 15
@@ -76,35 +76,6 @@ foo: {id: 1, verified: true, color: 'green'}
 // console.log(typeof quantity); // !-->string
 // ====================================================
 
-// *Методы Number.parseInt()
-/* Преобразуют строку символ за символом, пока это возможно. При возникновении ошибки возвращается число, которое получилось. */
-
-// console.log(Number.parseInt("5px")); // 5
-// console.log(Number.parseInt("12qwe74")); // 12
-// console.log(Number.parseInt("12.46qwe79")); // 12
-// console.log(Number.parseInt("qweqwe")); // NaN
-
-// let myData = '2px';
-// myData = Number.parseInt(myData);
-// console.log(myData);
-// +++++++++++++++++++
-// * Number.parseFloat()
-/* тоже, плюс дробную часть */
-// console.log(Number.parseFloat("12.46qwe79")); //--> 12.46
-// console.log(Number.parseFloat(".46qwe79")); //--> 0.46
-
-
-
-// =============================================
-
-// * числа
-
-// const valueA = "5";
-// console.log(Number(valueA)); // 5
-// console.log(typeof Number(valueA)); // "number"
-
-// ====================================================================
-
 // let myProfile = {name: 'Vlad', age: 22, sex: 'male'};
 // youProfile = {name: 'Вадим', age: 35, sex: 'male'}paris
 // console.table({myProfile, youProfile });
@@ -115,8 +86,13 @@ foo: {id: 1, verified: true, color: 'green'}
 
 // const guestName = "Mango";
 // const roomNumber = 207;
-// const greeting = `Добро пожаловать ${guestName}, вы поселены в номер ${roomNumber}`;
+// const greeting = `Добро пожаловать ${guestName},
+//  вы поселены в номер ${ roomNumber }`;
 // console.log(greeting);
+// =================================
+
+
+
 
 
 

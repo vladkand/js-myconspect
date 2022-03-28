@@ -4,4 +4,6 @@ console.log(quantity); //--> NaN
 console.log(typeof quantity); //-->number
 
 *** ВОПРОС
-          при вводе в модалку 'string', --> typeof пишет 'number' !!!
+  * при вводе в модалку 'string', --> typeof пишет 'number' !!!
+----------------------------------------------
+  * toFixed() не отсекает, а ОКРУГЛЯЕТ число
