@@ -85,6 +85,34 @@ console.log(isNaN(invalidNum));
 
 // console.log(Number(true));//->1
 
+//* логическое И '&&'
+/* 
+console.log(5 && 'pipl' && 22);// -> 22
+console.log(NaN && 'pipl' && 22);//-> NaN
+console.log(5 && 'pipl' && 0 && 22); //-> 0
+console.log(5 && 'false' && 0 && 22);
+ */
+
+//* логическое И '||'
+/* 
+console.log(5 || 4 || 0); //-> 0
+console.log(null || NaN || false); //-> false
+ */
+
+//* логическое И '!'
+
+// console.log(!0); //->true
+/* console.log(Number.parseInt(25.6));
+// console.log(toFixed(25.6));
+
+// variant #1
+let value = 130.42634;
+value = Number(value.toFixed(0)); // получаем string!!!
+console.log(value);
+ */
+
+
+
 
 
 

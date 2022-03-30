@@ -82,16 +82,7 @@ console.log(base ** expon);
 
 
 // * конкатенация строк
-/* 
-const message = "JavaScript " + "is " + "awesome!"; //c пробелами
-console.log(message); // -> JavaScript is awesome! 
-*/
 
-/* 
-console.log(1 + '2'); //-> 12 (string)
-console.log(1 + '2' + 4); //-> 124 (string)
-console.log(1 + 2 + '4'); //-> 34 (string) 
-*/
 
 // * шаблонные строки
 // строки с косыми кавычками ``

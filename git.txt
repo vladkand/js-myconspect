@@ -1,0 +1,12 @@
+1) В VSCode открыть папку куда качать проект(./'');
+2) Откр. текрминал;
+3) найти адресс репозитория в GIT
+  например (https://github.com/VovaMelnyk/JS47.git);
+4) В терминале команду 'cit clone https://github.com/VovaMelnyk/JS47.git' ;
+5) в папкt (./'')будет папка с загруженным проектом(JS47);
+6) Через файл->откр.папку->открыть нашу(JS47) там будет только readmy;
+7) В терминале команду 'git branch -r' -> получим список всех branch ->
+  ->  origin/HEAD -> origin/main
+      origin/main
+      origin/module-01
+8) Для загрузки нужной команда 'git checkout module-01'
