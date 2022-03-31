@@ -111,7 +111,7 @@ value = Number(value.toFixed(0)); // получаем string!!!
 console.log(value);
  */
 
-
+ 
 
 
 
