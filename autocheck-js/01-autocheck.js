@@ -1,3 +1,4 @@
+console.log('----AUTOCHECK');
 /* Шаблонные строки это альтернатива конкатенации с более удобным синтаксисом. Шаблонная строка заключена в обратные (косые) кавычки вместо двойных или одинарных и может содержать местозаполнители, которые обозначаются знаком доллара и фигурными скобками - ${выражение}. */
 
 // const productName = "Droid";
@@ -100,10 +101,96 @@ deliveryFee - стоимость доставки
 */
 // * РЕШЕНИЕ:
 // function isAdult(age) {
-//   // Change code below this line
 //   const passed = age >= 18 ;
 
-//   // Change code above this line
 //   return passed;
 // }
+
 // =======================================
+
+// * 15/36
+/* 
+Добавь выражение проверки совершеннолетия пользователя, значения параметра age, в условие для инструкции if.
+Если пользователь совершеннолетний, должен выполняться блок if и в переменную message записывается строка "You are an adult".
+В противном случае должен выполняться блок else и записывается строка "You are a minor".
+*/
+//* решение
+
+// function checkAge(age) {
+//   let message;
+//   let age = prompt('Введите возраст');
+//   if (age >= 18) {
+//     // Change this line
+//     message = 'You are an adult';
+//   } else if (age !== null) {
+//     message = 'You are a minor';
+//   } else {
+//     message = 'ВВЕДИ ЧИСЛО ';
+//   }
+//   alert(message);
+// }
+// checkAge(age);
+
+// *16/36
+
+/* 
+Станция по продаже ремонтных дроидов готова к запуску, осталось написать программное обеспечение для отдела продаж.
+
+Функция makeTransaction(pricePerDroid, orderedQuantity, customerCredits) выполняет транзакцию по продаже дроидов и возвращает сообщение о результате операции. Она объявляет три параметра, значения которых будут задаваться во время её вызова:
+
+pricePerDroid - цена одного дроида
+orderedQuantity - кол-во заказанных дроидов
+customerCredits - сумма средств на счету клиента
+Дополни её следующим функционалом:
+
+Объяви переменную totalPrice для хранения общей суммы заказа и присвой ей выражение расчёта этой суммы.
+Добавь проверку сможет ли клиент оплатить заказ:
+если сумма к оплате превышает количество кредитов на счету клиента, запиши в переменную message строку "Insufficient funds!";
+в противном случае, вычти сумму покупки со счёта клиента и запиши в переменную message сообщение: "You ordered <число> droids, you have <число> credits left".
+*/
+//
+// * вывод = functiot = в консоль
+
+function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+  let message;
+
+  let totalPrice = pricePerDroid * orderedQuantity;
+  // console.log(totalPrice);
+
+  if (totalPrice > customerCredits) {
+    message = 'Insufficient funds!';
+  } else {
+    message = `You ordered ${orderedQuantity} droids, you have ${
+      customerCredits - totalPrice
+    } credits left`;
+  }
+  return message;
+}
+console.log(makeTransaction(1000, 3, 20000));
+// =========================
+
+//  *
+let date = new Date();
+let output =
+  String(date.getDate()).padStart(2, '0') +
+  '/' +
+  String(date.getMonth() + 1).padStart(2, '0') +
+  '/' +
+  date.getFullYear();
+console.log(date);
+// =====================================
+// const ADMIN_PASSWORD = 'jqueryismyjam';
+// let message;
+// let inPassword = prompt('INPUT');
+// console.log(inPassword);
+
+// if (inPassword == null) {
+//   // Change this line
+//   message = 'Canceled by user!';
+// } else if (ADMIN_PASSWORD === inPassword) {
+//   // Change this line
+//   message = 'Welcome!';
+// } else {
+//   message = 'Access denied, wrong password!';
+// }
+// console.log(message);

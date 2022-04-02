@@ -46,14 +46,14 @@ const points = 15.8;
 
 
 // * toFixed();
-
+/* 
 // variant #1
 let value = 130.42634;
 value = value.toFixed(2); // получаем string!!!
 // преобразуем в number:
 value = Number(value);
 console.log(value);
-
+ */
 // -> сокращенная запись ->
 
 /* let value = 130.42934;
@@ -152,6 +152,5 @@ console.log(typeof username); */
 let b = +prompt("Введите второе число", "");
 alert( a + b );
  */
-
 
 
