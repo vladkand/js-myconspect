@@ -151,34 +151,24 @@ customerCredits - сумма средств на счету клиента
 //
 // * вывод = functiot = в консоль
 
-function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
-  let message;
+// function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+//   let message;
 
-  let totalPrice = pricePerDroid * orderedQuantity;
-  // console.log(totalPrice);
+//   let totalPrice = pricePerDroid * orderedQuantity;
+//   // console.log(totalPrice);
 
-  if (totalPrice > customerCredits) {
-    message = 'Insufficient funds!';
-  } else {
-    message = `You ordered ${orderedQuantity} droids, you have ${
-      customerCredits - totalPrice
-    } credits left`;
-  }
-  return message;
-}
-console.log(makeTransaction(1000, 3, 20000));
+//   if (totalPrice > customerCredits) {
+//     message = 'Insufficient funds!';
+//   } else {
+//     message = `You ordered ${orderedQuantity} droids, you have ${
+//       customerCredits - totalPrice
+//     } credits left`;
+//   }
+//   return message;
+// }
+// console.log(makeTransaction(1000, 3, 20000));
 // =========================
 
-//  *
-let date = new Date();
-let output =
-  String(date.getDate()).padStart(2, '0') +
-  '/' +
-  String(date.getMonth() + 1).padStart(2, '0') +
-  '/' +
-  date.getFullYear();
-console.log(date);
-// =====================================
 // const ADMIN_PASSWORD = 'jqueryismyjam';
 // let message;
 // let inPassword = prompt('INPUT');

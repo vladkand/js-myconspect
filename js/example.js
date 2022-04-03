@@ -1,7 +1,7 @@
 /*
  *Синтаксис
  */
-console.log('example');
+console.log('--- example');
 
 // console.log('Hello \'my\' world!'); // --> "Hello 'my' world!"
 
@@ -88,8 +88,6 @@ console.log(isNaN(invalidNum));
 let red;
 // console.log(red);
 
-console.log('&& \n', 'null' && (33 || 44)); //-> false
-
 //* логическое Или '||'
 
 // console.log(5 || 4 || 0); //-> 0
@@ -130,3 +128,29 @@ console.log('&& \n', 'null' && (33 || 44)); //-> false
 // // Change code above this line
 // // return price;
 // // }
+// let username;
+// console.log(typeof username); // "undefined"
+
+// let inputValue = null;
+// console.log(typeof inputValue); // "object"
+
+// const value = 27.1;
+// console.log(Math.floor(value)); // -> просто обрез после ","
+// console.log(Math.ceil(value)); // --> всегда целое(до запятой) в больш.
+// console.log(Math.round(value)); // - > как вматематике
+const ADMIN_PASSWORD = null;
+let message;
+// Change code below this line
+switch (ADMIN_PASSWORD) {
+  case null:
+    message = 'Canceled by user!';
+    breack;
+
+  case 'jqueryismyjam':
+    message = 'Welcome!';
+    breack;
+
+  default:
+    message = 'Access denied, wrong password!';
+}
+console.log(message);

@@ -1,3 +1,15 @@
+console.log('-- jeneral');
+
+// ! NUMBER
+// * Math.random(); -> случайное число
+// получаем случайное число
+
+// * Округление числа до целого значения
+// const value = 27.1;
+// console.log(Math.floor(value)); // -> просто обрез после ","
+// console.log(Math.ceil(value)); // --> всегда к большему
+// console.log(Math.round(value)); // - > как вматематике
+
 // ! BOOLEAN
 // *7 значений, которые всегда =false=
 /* 
@@ -51,7 +63,7 @@ console.log(5 && 'false' && 0 && 22);
 // console.log(false || ('Mango' && null)); // -> (false || null) --> null
 // console.log(false || 'Mango' > null); // false
 // console.log((false || 'Mango') > null);
-console.log('Mango' < 'null'); // true
+// console.log('Mango' < 'null'); // true
 // console.log(('false' && 'Mango') || 'null'); //-> Mango
 // console.log((1 && 'mango3' && 2) > 0); // null > 0 // true
 // console.log((1 && null && 2) > 0); // null > 0 // false
