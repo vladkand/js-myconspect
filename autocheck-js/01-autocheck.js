@@ -150,23 +150,24 @@ customerCredits - сумма средств на счету клиента
 */
 //
 // * вывод = functiot = в консоль
+/* 
+function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+  let message;
 
-// function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
-//   let message;
+  let totalPrice = pricePerDroid * orderedQuantity;
+  // console.log(totalPrice);
 
-//   let totalPrice = pricePerDroid * orderedQuantity;
-//   // console.log(totalPrice);
-
-//   if (totalPrice > customerCredits) {
-//     message = 'Insufficient funds!';
-//   } else {
-//     message = `You ordered ${orderedQuantity} droids, you have ${
-//       customerCredits - totalPrice
-//     } credits left`;
-//   }
-//   return message;
-// }
-// console.log(makeTransaction(1000, 3, 20000));
+  if (totalPrice > customerCredits) {
+    message = 'Insufficient funds!';
+  } else {
+    message = `You ordered ${orderedQuantity} droids, you have ${
+      customerCredits - totalPrice
+    } credits left`;
+  }
+  return message;
+}
+console.log(makeTransaction(1000, 3, 20000));
+ */
 // =========================
 
 // const ADMIN_PASSWORD = 'jqueryismyjam';
@@ -184,3 +185,66 @@ customerCredits - сумма средств на счету клиента
 //   message = 'Access denied, wrong password!';
 // }
 // console.log(message);
+// =============================
+
+// *30/36
+/* 
+Функция getNameLength(name) принимает имя (параметр name) и возвращает строку, в которой указана его длина. Дополни шаблонную строку в переменной message длиной строки из параметра name.
+===========================
+*задание 
+Объявлена функция getNameLength(name)
+Вызов функции getNameLength("Poly") возвращает "Name Poly is 4 characters long"
+Вызов функции getNameLength("Harambe") возвращает "Name Harambe is 6 characters long"
+Вызов функции getNameLength("Billy") возвращает "Name Billy is 5 characters long"
+Вызов функции getNameLength("Joe") возвращает "Name Joe is 3 characters long"
+ */
+
+/* function getNameLength(name) {
+  const message = `Name ${name} is ${name.length} characters long`; // Change this line
+
+  return message;
+}
+console.log(getNameLength('Harambe'));
+ */
+// =====================================
+
+// *31/36 свойства строки [индекс знака]
+/* 
+Дополни код присвоив объявленным переменным выражения обращения к соответствующим элементам или свойствам строки в переменной course.
+
+courseTopicLength - длина строки.
+firstElement - первый символ строки.
+lastElement - последний символ строки.
+*/
+// *решение:
+
+const courseTopic = 'JavaScript essentials';
+// Change code below this line
+
+const courseTopicLength = courseTopic.length;
+const firstElement = courseTopic[0];
+const lastElement = courseTopic[courseTopic.length - 1];
+
+console.log(courseTopic.length);
+console.log('два ', courseTopic[-4 + 6]); //-> вычисляет сумму -4+6=2
+// console.log(courseTopic[20]);
+// * пишут более гибко
+console.log(courseTopic[courseTopic.length - 1]); // -1 это посл символ с конца
+
+// ========================================
+// * 32/36
+/* 
+Функция getSubstring(string, length) принимает строку и возвращает подстроку от начала и до length символов. Она объявляет два параметра, значения которых будут задаваться во время её вызова:
+
+string - оригинальная строка
+length - количество символов с начала строки для подстроки
+Присвой переменной substring выражение создания подстроки длинной length символов (от начала) из строки string. */
+// *Решение
+/* 
+function getSubstring(string, length) {
+  const substring = string.slice(string, length); // Change this line
+
+  return substring;
+}
+console.log(getSubstring('длинной length символов (от начала)', -3)); //3-й симв с конца
+ */
