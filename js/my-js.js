@@ -16,7 +16,6 @@ console.log('--My js');
 
 // console.log(dice1, dice2); // выводим
 
-
 // // округляем с поиощюь метода Math.round и выводим
 // console.log(Math.round(dice1));
 // console.log(Math.round(dice2));
@@ -25,6 +24,7 @@ console.log('--My js');
 // console.log(Number.parseInt(dice2.toFixed(0)));
 
 //* Зарплата
+/* 
 const minSalary = 500; // min зарплата
 const maxSalary = 1500; // max зарплата
 const emloyees = 4; // к-во работников
@@ -39,12 +39,4 @@ for (let i = 1; i <= emloyees; i +=1) {
   console.log(`ЗП раба ${i} -- ${salary}`);
 }
   console.log(' Вся ЗП --', totalSalary);
-
-
-
-
-
-
-
-
-
+ */

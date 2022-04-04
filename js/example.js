@@ -43,10 +43,7 @@ console.log(typeof valueC);//->number */
 // console.log(lastName);
 // ===============================
 
-
 // console.log(Number(true));//->1
-
-
 
 //* логическое И '!'
 
@@ -93,5 +90,28 @@ console.log(typeof valueC);//->number */
 // console.log(Math.floor(value)); // -> просто обрез после ","
 // console.log(Math.ceil(value)); // --> всегда целое(до запятой) в больш.
 // console.log(Math.round(value)); // - > как вматематике
+/* 
+const message = 'Get best spawm offers now!';
+const nameSale = 'sale';
+const nameSpam = 'spam';
+let result;
 
+result = message.toLowerCase();
+// console.log(result);
 
+// console.log(result.includes(nameSale) || result.includes(nameSpam));
+
+if (result.includes(nameSale) === true || result.includes(nameSpam) === true) {
+  console.log('Тут спам');
+} else {
+  console.log('СПАМА НЕТ');
+} */
+
+// ==============
+// if (result.includes(name)) {
+//   console.log('ТУТ спам');
+// } else {
+//   console.log('СПАМА НЕТ');
+// }
+
+// const resultFinn = result.includes(name);

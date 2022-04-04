@@ -217,7 +217,7 @@ firstElement - первый символ строки.
 lastElement - последний символ строки.
 */
 // *решение:
-
+/* 
 const courseTopic = 'JavaScript essentials';
 // Change code below this line
 
@@ -230,7 +230,7 @@ console.log('два ', courseTopic[-4 + 6]); //-> вычисляет сумму 
 // console.log(courseTopic[20]);
 // * пишут более гибко
 console.log(courseTopic[courseTopic.length - 1]); // -1 это посл символ с конца
-
+ */
 // ========================================
 // * 32/36
 /* 
@@ -247,4 +247,61 @@ function getSubstring(string, length) {
   return substring;
 }
 console.log(getSubstring('длинной length символов (от начала)', -3)); //3-й симв с конца
+ */
+// =======================
+
+// * 33/36
+/* 
+Функция formatMessage(message, maxLength) принимает строку (параметр message) и форматирует её, если длина превышает значение в параметре maxLength.
+
+Дополни код функции так, что если длина строки:
+
+не превышает maxLength, функция возвращает её в исходном виде.
+больше maxLength, то функция обрезает строку до maxLength символов и добавляет в конец троеточие "...", после чего возвращает укороченную версию.
+*/
+// *Решение
+/* 
+function formatMessage(message, maxLength) {
+  let result;
+  // Change code below this line
+
+  if (message.length <= maxLength) {
+    result = message;
+  } else {
+    result = message.slice(0, maxLength) + '...';
+  }
+  /// Change code above this line
+  return result;
+}
+console.log(formatMessage('Тут находится вся строка!', 15));
+ */
+// ==========================================
+
+// * 36/36
+/* 
+Функция checkForSpam(message) принимает строку (параметр message), проверяет её на содержание запрещенных слов spam и sale, и возвращает результат проверки. Слова в строке параметра message могут быть в произвольном регистре, например SPAM или sAlE.
+
+Если нашли запрещенное слово (spam или sale) то функция возвращает буль true.
+Если в строке нет запрещенных слов, функция возвращает буль false.
+*/
+// * Решение
+/* 
+function checkForSpam(message) {
+  let result;
+  // Change code below this line
+  result =
+    message.toLocaleLowerCase().includes('spam') ||
+    message.toLocaleLowerCase().includes('sale');
+  // Change code above this line
+  return result;
+}
+console.log(checkForSpam('Amazing SalE, only tonight!')); // ->true SaLE
+
+// * вариант через if
+
+const message = 'Get best speaM saLE offers now!';
+console.log(
+  message.toLocaleLowerCase().includes('spam') ||
+    message.toLocaleLowerCase().includes('sale'),
+);
  */
