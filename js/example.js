@@ -115,3 +115,13 @@ if (result.includes(nameSale) === true || result.includes(nameSpam) === true) {
 // }
 
 // const resultFinn = result.includes(name);
+// =====
+// const a = [1, 2, 3];
+// const b= [4, 5, 6];
+// const mix = [...a, ...b];
+// a.push(22);
+// console.log(mix);
+// a[1] = 9;
+// console.log(a);
+// console.log(mix);
+// ==================
